@@ -1,0 +1,78 @@
+<div>
+
+    Users REST API response :
+
+    @if (!errorUser) {
+    <table>
+        <tr>
+            <th> Name </th>
+            <th> Gender </th>
+            <th> Compony </th>
+        </tr>
+        @for( user of users; track user.name ) {
+        <tr>
+            <td> {{user.name}} </td>
+            <td> {{user.gender}} </td>
+            <td> {{user.company}} </td>
+        </tr>
+        }
+    </table>
+    }
+    @else {
+    <div> {{errorMessage}} </div>
+    }
+
+
+    Detailed Users Rest API response:
+    @if (!errorUserDetailed) {
+    <table>
+        <tr>
+            <th> Name </th>
+            <th> Gender </th>
+            <th> Compony </th>
+            <th> Age </th>
+            <th> Eye Color </th>
+            <th> Email </th>
+            <th> Phone </th>
+            <th> Address </th>
+        </tr>
+        @for( user of detailedUsers; track user.name ) {
+        <tr>
+            <td> {{user.name}} </td>
+            <td> {{user.gender}} </td>
+            <td> {{user.company}} </td>
+            <td> {{user.age}} </td>
+            <td> {{user.eyeColor}} </td>
+            <td> {{user.email}} </td>
+            <td> {{user.phone}} </td>
+            <td> {{user.address}} </td>
+        </tr>
+        }
+    </table>
+    }
+    @else {
+    <div> {{errorMessage}} </div>
+    }
+
+
+    Countries REST API response:
+
+    @if (!errorCountry) {
+    <table>
+        <tr>
+            <th> Name </th>
+            <th> Code </th>
+        </tr>
+        @for( country of countries; track country.name ) {
+        <tr>
+            <td> {{country.name}} </td>
+            <td> {{country.code}} </td>
+        </tr>
+        }
+    </table>
+    }
+    @else {
+    <div> {{errorMessage}} </div>
+    }
+
+</div>

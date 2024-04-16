@@ -1,0 +1,7 @@
+{
+
+    "realm": "production",
+    "keycloak_base_url": "http://localhost:8080/",
+    "client_id": "frontend"
+    
+}

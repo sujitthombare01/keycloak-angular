@@ -1,0 +1,27 @@
+<div class="container">
+    <header>
+        <h1>Welcome {{userName}} to Keycloak demo with Angular!</h1>
+        <p>We are excited to have you here.</p>
+    </header>
+
+    <header class="navbar">
+        <nav class="menu">
+            <a routerLink="/" routerLinkActive="active">Home</a>
+            <a routerLink="/users" routerLinkActive="active">Users</a>
+            <a routerLink="/admin" routerLinkActive="active">Admin</a>
+            <a routerLink="/advance-user" routerLinkActive="active">Advance User</a>
+            <a (click) = "loginLogout()" > {{loginText}} </a>
+        </nav>
+    </header>
+
+    <!-- Your other page content here -->
+    <main>
+        <!-- Your main content goes here -->
+        <router-outlet></router-outlet>
+    </main>
+
+
+    <footer>
+        <p>Angular-Keycloak integrations</p>
+    </footer>
+</div>

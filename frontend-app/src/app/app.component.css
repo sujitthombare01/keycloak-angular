@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+
+/* Navbar Container */
+.navbar {
+    background-color: #333; /* Navbar background color */
+    color: #fff; /* Text color */
+    padding: 10px 0; /* Vertical padding */
+}
+
+/* Menu Container */
+.menu {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center-align menu items horizontally */
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+/* Menu Items (Links) */
+.menu a {
+    display: block; /* Make anchor tags behave like block elements */
+    padding: 10px 20px; /* Padding inside menu items */
+    color: inherit; /* Inherit text color from parent (navbar) */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Menu item text size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Active Menu Item */
+.menu a.active {
+    background-color: #555; /* Darker background color for active link */
+}
+
+/* Hover Effect */
+.menu a:hover {
+    background-color: #555; /* Darker background color on hover */
+}
